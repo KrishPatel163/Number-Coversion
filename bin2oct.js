@@ -28,11 +28,11 @@ function bin2oct(bin){
     while(i < arr.length/3){
         binGrp = arr.slice(n, n+3).join('').toString()
         // console.log(`${binGrp}`);
-        octal = octal + bin2dec(binGrp).toString()
+        octal = octal + bin2dec(binGrp)
         n = n + 3
         i++
     }
-    return parseInt(octal)
+    return octal
 }
 
 console.log(bin2oct("1000"));

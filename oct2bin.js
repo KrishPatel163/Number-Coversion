@@ -4,9 +4,11 @@ function oct2bin(octal){
     let arr = octal.toString().split('')
     let bin = ""
     arr.forEach(element => {
-        bin = bin + dec2bin(element).toString()
+        bin = bin + dec2bin(element,3)
     });
-    console.log(bin);
+    // console.log(bin);
+    return bin
 }
 
-oct2bin(12)
+bin = oct2bin(12)
+console.log(bin);
