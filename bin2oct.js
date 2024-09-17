@@ -7,10 +7,14 @@ function bin2oct(bin){
     arr.reverse() // Reverse the arr to make the group from right to left
 
     // Find the remaining number and pair it up with 0
-    while(arr.length % 3 !== 0){
-        arr.push('0')
+    if (arr.length % 3 === 1){
+        arr.push('0','0')
+        // console.log("Complete Pair With adding 0 0: ",arr);
     }
-    console.log("After pushing 0s: ", arr);
+    else if (arr.length % 3 === 2){
+        arr.push('0')
+        // console.log("Complete Pair With adding 0: ",arr);
+    }
 
     arr.reverse() // Now reverse the arr again to do conversions correctly
 
