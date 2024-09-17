@@ -14,7 +14,7 @@ function bin2dec(x){
     return dec
 }
 
-let bin = '000'
-console.log(bin2dec(bin));
+// let bin = '000'
+// console.log(bin2dec(bin));
 
 module.exports = bin2dec
